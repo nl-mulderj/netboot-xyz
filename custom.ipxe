@@ -45,7 +45,7 @@ isset ${win_base_url} && goto boot || echo URL not set... && goto url_set
 
 :boot
 imgfree
-kernel {{ wimboot_location }}
+kernel http://${boot_domain}/wimboot
 initrd -n bootmgr     ${win_base_url}/${win_arch}/bootmgr       bootmgr ||
 initrd -n bootmgr.efi ${win_base_url}/${win_arch}/bootmgr.efi   bootmgr.efi ||
 initrd -n bcd         ${win_base_url}/${win_arch}/boot/bcd      bcd ||
