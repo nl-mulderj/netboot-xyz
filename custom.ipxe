@@ -4,7 +4,7 @@
 # https://www.microsoft.com
 
 set win_arch x64
-set win_base_url http://192.168.10.10:9944/Win/PE
+set win_base_url http://hexanas.servers.xoric.nl:9944/Win/PE
 
 imgfree
 kernel http://${boot_domain}/wimboot
